@@ -1,5 +1,6 @@
 function [percent_cutoff_PM1, percent_cutoff_PM25, percent_cutoff_PM10]=func_calc_cutoff_volume_percentage_PNSD(cutoff_D, accum_DG, accum_theta, accum_V, coarse_DG, coarse_theta, coarse_V)
 % Copyright (C) Ying Chen, cycy1320@gmail.com
+% This is a MATLAB function file
 
 % INPUTS:
 % cutoff_D= dry PM diameter [nm] that larger particles will be blocked outside by sampler; e.g., cutoff_D for PM1 = 1000/growth_factor, because dry_PM_Diameter * growth_factor = 1000 nm (cutoff threshold)
@@ -7,7 +8,7 @@ function [percent_cutoff_PM1, percent_cutoff_PM25, percent_cutoff_PM10]=func_cal
 % accum_theta = standard deviation for accumulation mode 
 % accum_V = volume concentration for accumulation mode [um3/cm3];  this is no important if calculate for percentage of cutoff, can set as '1'
 % coarse_DG, coarse_theta, coarse_V -- similar as accumulation mode, but parameters for coarse model particles
-% Note: aiken mode is note considered here, because Aiken mode is not expected to grow to large enough to be blocked out.
+% Note: aiken mode is note considered here, because Aiken mode is not expected to grow to large enough to be blocked out.  Volume and mass percentage can be the same assuming that constent density.
 
 
 % OUTPUTS:
