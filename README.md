@@ -1,4 +1,4 @@
-# PM_cutoff
+# Aerosol Particulate Matter cutoff calculation
 PM sampling hygroscopicity-induced extra cutoff calc
 Contact: y.chen.21@bham.ac.uk;   cycy1320@gmail.com
 
